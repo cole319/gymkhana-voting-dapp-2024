@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-neutral-50 text-lg font-semibold">
-            © 2023 Suryarghya Saha{" "}
+            © 2024 Suryarghya Saha{" "}
             <span className="text-neutral-300 text-normal font-normal">&</span>{" "}
             Siddharth Toppo
           </h1>

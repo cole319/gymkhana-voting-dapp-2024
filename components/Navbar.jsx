@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="font-bold text-2xl">LOGO</div>
         <div>
           <button
-            className="w-fit bg-[#FC4F00] text-neutral-50 font-semibold px-3 py-2 
+            className="w-fit bg-[#FC4F00] text-neutral-50 font-semibold px-4 py-1 text-lg 
                     rounded-md border-2 border-[#FC4F00] hover:bg-transparent hover:border-neutral-50"
             onClick={connectWallet}
           >

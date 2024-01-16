@@ -7,7 +7,7 @@ import { BsFillEnvelopeFill } from "react-icons/bs";
 export default function Hero() {
   return (
     <div>
-      <div className="px-60 py-20 bg-gradient-to-r from-sky-900 via-sky-600 to-sky-700 ">
+      <div className="px-60 py-20 bg-gradient-to-r from-sky-950 via-sky-600 to-sky-700 ">
         <div className="flex flex-col items-center">
           {/* <div className="w-1/2"> */}
           <h1 className="text-4xl font-bold text-sky-200 text-center pb-2">

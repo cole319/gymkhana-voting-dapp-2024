@@ -13,7 +13,7 @@ export default function Main() {
           }
           cardTitle={"Candidate Registration"}
           buttonContent={"Go to portal"}
-          buttonLink={"/CandidateRegistration"}
+          buttonLink={"/candidateRegistration"}
           imageLink={CardDemo}
         />
         <Card
@@ -22,16 +22,16 @@ export default function Main() {
           }
           cardTitle={"Voter Registration"}
           buttonContent={"Go to portal"}
-          buttonLink={"/VoterRegistration"}
+          buttonLink={"/voterRegistration"}
           imageLink={CardDemo}
         />
         <Card
           cardContents={
             "This is a brief description of the functionality of this card"
           }
-          cardTitle={"Candidate and Voters List"}
+          cardTitle={"Candidates and Voters List"}
           buttonContent={"Go to portal"}
-          buttonLink={"/Lists"}
+          buttonLink={"/lists"}
           imageLink={CardDemo}
         />
       </div>
@@ -42,7 +42,7 @@ export default function Main() {
         <h1 className="text-sky-950 font-semibold text-xl underline text-center">
           Important Links
         </h1>
-        <div className="text-neutral-700 text-lg font-semibold flex flex-col space-y-2 items-center">
+        <div className="text-neutral-600 text-lg font-semibold flex flex-col space-y-2 items-center">
           <Link
             className="cursor-pointer hover:underline flex items-center space-x-2 text-center"
             href="/instructions"

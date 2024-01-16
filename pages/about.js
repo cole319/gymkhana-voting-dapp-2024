@@ -1,3 +1,3 @@
 export default function About() {
-  return <div>About</div>;
+  return <div className="min-h-screen bg-neutral-50">About</div>;
 }

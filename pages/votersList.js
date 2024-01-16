@@ -1,3 +1,3 @@
 export default function VotersList() {
-  return <div>VotersList</div>;
+  return <div className="min-h-screen bg-neutral-50">VotersList</div>;
 }

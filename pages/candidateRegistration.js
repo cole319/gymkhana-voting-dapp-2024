@@ -1,3 +1,5 @@
 export default function CandidateRegistration() {
-  return <div>CandidateRegistration </div>;
+  return (
+    <div className="min-h-screen bg-neutral-50">CandidateRegistration </div>
+  );
 }

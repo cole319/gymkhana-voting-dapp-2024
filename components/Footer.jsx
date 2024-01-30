@@ -1,4 +1,7 @@
 import React from "react";
+
+import Link from "next/link";
+
 import { BsTwitterX } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsFillEnvelopeFill } from "react-icons/bs";
@@ -12,16 +15,33 @@ export default function Footer() {
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-neutral-50 text-lg font-semibold">
-            © 2024 Suryarghya Saha{" "}
-            <span className="text-neutral-300 text-normal font-normal">&</span>{" "}
+            © 2024 Suryarghya Saha
+            <span className="text-neutral-300 text-normal font-normal">
+              &
+            </span>{" "}
             Siddharth Toppo
           </h1>
           <h1 className="text-neutral-300">All rights reserved</h1>
         </div>
         <div className="flex space-x-6">
-          <BsTwitterX className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
-          <BsFillEnvelopeFill className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
-          <BsLinkedin className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+          <Link
+            className="cursor-pointer hover:underline flex items-center space-x-2 text-center"
+            href="/"
+          >
+            <BsTwitterX className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+          </Link>
+          <Link
+            className="cursor-pointer hover:underline flex items-center space-x-2 text-center"
+            href="/"
+          >
+            <BsFillEnvelopeFill className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+          </Link>
+          <Link
+            className="cursor-pointer hover:underline flex items-center space-x-2 text-center"
+            href="/"
+          >
+            <BsLinkedin className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+          </Link>
         </div>
       </div>
     </footer>

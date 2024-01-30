@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import CardDemo from "@/public/demoHero1.jpg";
 
 export default function Card({
   cardTitle,

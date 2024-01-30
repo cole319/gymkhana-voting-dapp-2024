@@ -1,5 +1,5 @@
-import Image from "next/image";
-import HeroDemo from "@/public/demoHero.png";
+import Link from "next/link";
+
 import { BsTwitterX } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsFillEnvelopeFill } from "react-icons/bs";
@@ -33,9 +33,15 @@ export default function Hero() {
           <br />
           <br />
           <div className="flex space-x-6">
-            <BsTwitterX className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
-            <BsFillEnvelopeFill className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
-            <BsLinkedin className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+            <Link className="flex items-center space-x-2 text-center" href="/">
+              <BsTwitterX className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+            </Link>
+            <Link className="flex items-center space-x-2 text-center" href="/">
+              <BsFillEnvelopeFill className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+            </Link>
+            <Link className="flex items-center space-x-2 text-center" href="/">
+              <BsLinkedin className="w-5 h-5 cursor-pointer hover:translate-y-[-2px]" />
+            </Link>
           </div>
           {/* </div> */}
           {/* <div className="w-1/2 flex justify-end">

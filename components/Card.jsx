@@ -38,7 +38,7 @@ export default function Card({
             bgColor={"bg-slate-50"}
             textColor={"text-slate-800"}
             hoverBgColor={"bg-transparent"}
-            hoverTextColor={"text-slate-50"}
+            hoverTextColor={hoverTextColor}
             borderColor={"border-slate-50"}
           />
         </Link>

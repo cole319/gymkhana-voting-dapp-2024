@@ -1,50 +1,87 @@
 import Input from "./Input";
 import Button from "./Button";
+import DataList from "./DataList";
 
 export default function Form() {
+  const handleSubmit = () => {};
+
   return (
-    <div className="w-full flex flex-col items-center">
-      <h1 className="py-4 font-semibold text-4xl ">Candidate Registration</h1>
-      <div className="space-y-6 w-full flex flex-col items-center">
-        <div className="space-x-4 flex">
-          <h1 className="">Name</h1>
-          <Input type={"text"} name={"name"} />
-        </div>
-
-        <div className="space-x-4 flex">
-          <h1>Name</h1>
+    <div className="flex flex-col items-center">
+      <h1 className="pb-10 font-semibold text-4xl text-neutral-600">
+        Candidate Registration
+      </h1>
+      <div className="space-y-6 flex flex-col items-center w-3/5">
+        <div className="flex w-full space-x-4">
           <input
             type="text"
             name="name"
-            className="border-2 border-neutral-800 w-full"
+            className="border-2 border-neutral-800 w-3/5 py-2 px-4 placeholder-slate-800 rounded-sm"
+            placeholder="Name"
           />
-        </div>
 
-        <div className="space-x-4 flex">
-          <h1>Name</h1>
           <input
             type="text"
-            name="name"
-            className="border-2 border-neutral-800 w-full"
+            name="admission no"
+            className="border-2 border-neutral-800 w-2/5 py-2 px-4 placeholder-slate-800"
+            placeholder="Admission No"
           />
         </div>
 
-        <div className="space-x-4 flex">
-          <h1>Email</h1>
+        {/*should be a dropdown */}
+        <input
+          type="text"
+          name="branch"
+          className="border-2 border-neutral-800 w-full py-2 px-4 placeholder-slate-800"
+          placeholder="Branch"
+        />
+
+        {/*should be a dropdown */}
+        <input
+          type="text"
+          name="discipline"
+          className="border-2 border-neutral-800 w-full py-2 px-4 placeholder-slate-800"
+          placeholder="Discipline"
+        />
+
+        <div className="flex w-full space-x-4">
+          {/*Dropdown choose from numbers 1 to 5*/}
           <input
             type="text"
-            name="email"
-            className="border-2 border-neutral-800 w-full"
+            name="year"
+            className="border-2 border-neutral-800 w-1/2 py-2 px-4 placeholder-slate-800"
+            placeholder="Year"
           />
+
+          <input
+            type="text"
+            list="cgpa"
+            name="cgpa"
+            className="border-2 border-neutral-800 w-1/2 py-2 px-4 placeholder-slate-800"
+            placeholder="CGPA"
+          />
+
+          {/*Dropdown choose from numbers 1 to 10*/}
         </div>
 
-        <button
-          className="w-full cursor-pointer bg-sky-500 text-neutral-800 font-semibold px-3 py-1 
-        rounded-md border-2 border-sky-500 hover:bg-transparent hover:text-sky-500"
-          //   onClick={onClick}
-        >
-          Register
-        </button>
+        <input
+          type="email"
+          name="email"
+          className="border-2 border-neutral-800 w-full py-2 px-4 placeholder-slate-800"
+          placeholder="Institute Email"
+        />
+
+        <DataList className="border-2 border-neutral-800 py-2 px-4 placeholder-slate-800" />
+
+        <Button
+          buttonContent={"Register"}
+          customWidth={"w-full"}
+          onClick={handleSubmit}
+          bgColor={"bg-sky-500"}
+          textColor={"text-neutral-50"}
+          hoverBgColor={"bg-transparent"}
+          hoverTextColor={"text-sky-500"}
+          borderColor={"border-sky-500"}
+        />
       </div>
     </div>
   );

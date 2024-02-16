@@ -35,6 +35,11 @@ export default function Card({
             buttonContent={buttonContent}
             customWidth={"w-full"}
             onClick={onClick}
+            bgColor={"bg-slate-50"}
+            textColor={"text-slate-800"}
+            hoverBgColor={"bg-transparent"}
+            hoverTextColor={"text-slate-50"}
+            borderColor={"border-slate-50"}
           />
         </Link>
       </div>

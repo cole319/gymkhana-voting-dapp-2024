@@ -1,13 +1,24 @@
-export default function Button({ buttonContent, onClick, customWidth }) {
+export default function Button({
+  buttonContent,
+  customWidth,
+  onClick,
+  bgColor,
+  textColor,
+  hoverBgColor,
+  hoverTextColor,
+  borderColor,
+  paddingX,
+  paddingY,
+}) {
   return (
-    <div>
-      <button
-        className={`${customWidth} cursor-pointer bg-slate-50 text-neutral-800 font-semibold px-3 py-1 
-        rounded-md border-2 border-slate-50 hover:bg-transparent hover:text-neutral-50`}
-        onClick={onClick}
-      >
-        {buttonContent}
-      </button>
-    </div>
+    <button
+      className={`${customWidth} ${bgColor} ${textColor} ${borderColor} ${
+        paddingX ? paddingX : "px-3"
+      } ${paddingY ? paddingY : "py-1"} cursor-pointer font-semibold 
+        rounded-md border-2 hover:${hoverBgColor} hover:${hoverTextColor}`}
+      onClick={onClick}
+    >
+      {buttonContent}
+    </button>
   );
 }
